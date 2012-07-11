@@ -1,6 +1,4 @@
-require 'rubygems'
-require 'rake'
-require 'echoe'
+
 
 Echoe.new('css_contents', '0.0.1') do |p|
   p.description    = "This gem is for automatically creating a table of contents at the top of a given scss file."
