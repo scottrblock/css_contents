@@ -23,7 +23,7 @@ in any scss file where you want your table of contents to be generated.  Then, t
 
 	//chapter whatever your heard desires
 
-*You need to include the keyword chapter for this to work!*
+**You need to include the keyword chapter for this to work!**
 
 Usage
 -----
