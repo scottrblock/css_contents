@@ -10,18 +10,25 @@ Maintaining large CSS files is a pain. This might help make that process just a 
 Install
 -------
 If you wanna try this out, just put the following in your Gemfile and run bundle install. I'll get it up on rubygems soon! Also, sorry if I break it.
-    gem 'css_contents', :git => 'git@github.com:scottrblock/css_contents.git'
+  
+	gem 'css_contents', :git => 'git@github.com:scottrblock/css_contents.git'
     
 Setup
 -----
 Once installed, add
-    //commentify
+
+	//commentify
+
 in any scss file where you want your table of contents to be generated.  Then, throughout your scss file, indicate new chapters using:
-    //chapter whatever your heard desires
+
+	//chapter whatever your heard desires
+
 *You need to include the keyword chapter for this to work!*
 
 Usage
 -----
 Once your scss files are ready to go, run the following rake command to generate the table of contents awesome-sauce:
-    rake css_contents:commentify
+
+	rake css_contents:commentify
+
 _If someone knows how to make this work with a deployment process, feel free to fork, add and pull request!_
