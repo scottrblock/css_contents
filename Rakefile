@@ -36,3 +36,5 @@ end
 
 
 task :default => :test
+
+Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
