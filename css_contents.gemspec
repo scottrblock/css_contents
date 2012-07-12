@@ -7,16 +7,15 @@ require "css_contents/version"
 Gem::Specification.new do |s|
   s.name        = "css_contents"
   s.version     = CssContents::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of CssContents."
-  s.description = "TODO: Description of CssContents."
+  s.authors     = ["Scott Block"]
+  s.email       = ["scottrblock@gmail.com"]
+  s.homepage    = "twitter.com/insidetheblock"
+  s.summary     = "CSS TOC Genertor."
+  s.description = "Generate table of contents for sass files."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.5"
+  s.add_dependency "rails", "~> 3.1"
 
-  s.add_development_dependency "sqlite3"
 end
