@@ -1,10 +1,6 @@
 Dir["tasks/**/*.rake"].each { |ext| load ext } if defined?(Rake)
 
-module CssContents < Rails::Railtie
-    rake_tasks do
-      Dir[File.join(File.dirname(__FILE__),'tasks/*.rake')].each { |f| load f }
-    end
-    
+module CssContents
     def self.included(base)
       base.extend ClassMethods
     end  
@@ -15,4 +11,10 @@ module CssContents < Rails::Railtie
 
   class ActiveRecord::Base
     include CssContents
+  
+  class CommentGenerate < Rails::Railtie
+      rake_tasks do
+        Dir[File.join(File.dirname(__FILE__),'tasks/*.rake')].each { |f| load f }
+      end
+  end
 end
