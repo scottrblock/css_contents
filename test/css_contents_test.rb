@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class CssContentsTest
+class CssContentsTest < ActiveSupport::TestCase
   test "truth" do
-    's' == 's'
+    assert_kind_of Module, CssContents
   end
 end
