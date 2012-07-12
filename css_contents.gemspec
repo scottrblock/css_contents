@@ -9,7 +9,6 @@ Gem::Specification.new do |s|
   s.version     = CssContents::VERSION
   s.authors     = ["Scott Block"]
   s.email       = ["scottrblock@gmail.com"]
-  s.homepage    = "twitter.com/insidetheblock"
   s.summary     = "CSS TOC Genertor."
   s.description = "Generate table of contents for sass files."
 
